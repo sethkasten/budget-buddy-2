@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Header Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Londrina+Solid&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Main Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Londrina+Solid&family=Quicksand:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Budget Buddy</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="title-logo-container">
+        <h1 class="page-title">Budget Buddy</h1>
+        <img
+          src="assets/budget-buddy-logo.png"
+          alt="Bugdet Buddy logo"
+          class="logo"
+        />
+      </div>
+
+      <button class="clear">Clear</button>
+    </header>
+    <main class="main">
+      <section class="budget-balance-container">
+        <form class="budget-form">
+          <label for="budget" name="budget">Budget</label>
+          <input
+            type="text"
+            placeholder="Budget"
+            name="budget"
+            id="budget"
+            autocomplete="off"
+          />
+          <button class="update-balance-button">Update Balance</button>
+        </form>
+        <table>
+          <tr>
+            <td>Remaining Balance:</td>
+            <td class="balance"></td>
+          </tr>
+          <tr>
+            <td>Total:</td>
+            <td class="total"></td>
+          </tr>
+          <tr>
+            <td>Bills:</td>
+            <td class="bills"></td>
+          </tr>
+          <tr>
+            <td>Clothing:</td>
+            <td class="clothing"></td>
+          </tr>
+          <tr>
+            <td>Entertainment:</td>
+            <td class="entertainment"></td>
+          </tr>
+          <tr>
+            <td>Food:</td>
+            <td class="food"></td>
+          </tr>
+        </table>
+      </section>
+      <section class="item-description-form-container">
+        <form class="item-description-form">
+          <input
+            class="item-description-form-element"
+            disabled="disabled"
+            type="text"
+            placeholder="Item Description"
+            name="item-description"
+            id="item-description"
+          />
+
+          <div class="bill-amount-container">
+            <select
+              name="category"
+              id="category"
+              disabled="disabled"
+              class="item-description-form-element"
+            >
+              <option value="bills">Bills</option>
+              <option value="clothing">Clothing</option>
+              <option value="entertainment">Entertainment</option>
+              <option value="food">Food</option>
+            </select>
+            <input
+              class="item-description-form-element"
+              disabled="disabled"
+              type="number"
+              placeholder="Amount ($)"
+              step="0.01"
+              name="amount"
+              id="amount"
+            />
+          </div>
+          <button class="item-description-form-element" disabled="disabled">
+            Add Item
+          </button>
+        </form>
+      </section>
+      <table class="items-table">
+        <tbody class="item-table-body">
+          <tr>
+            <th class="item-header">Item</th>
+            <th class="item-header">Category</th>
+            <th class="item-header">Amount ($)</th>
+            <th class="item-header"></th>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

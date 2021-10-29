@@ -1,0 +1,132 @@
+/* resets */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #80b1a5;
+}
+
+.header {
+  background-color: lightgray;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+  font-family: "Londrina Solid", cursive;
+  background-color: #41ab8f;
+}
+
+.title-logo-container {
+  display: flex;
+}
+
+.logo {
+  height: 48px;
+  padding-left: 10px;
+}
+
+.main {
+  font-family: "Quicksand", sans-serif;
+  font-size: 18px;
+  padding: 10px;
+}
+
+.page-title {
+  margin: 5px 0;
+}
+
+.clear {
+  height: 20px;
+}
+
+.delete {
+  height: 20px;
+}
+
+button {
+  font-family: "Quicksand", sans-serif;
+  color: white;
+  background-color: #316257;
+  border-radius: 7.5px;
+}
+
+input:placeholder-shown {
+  font-family: "Quicksand", sans-serif;
+}
+
+#category {
+  font-family: "Quicksand", sans-serif;
+  flex: 1;
+  margin: 6px 3px 6px 0px;
+}
+
+#amount {
+  flex: 1;
+  margin: 6px 0px 6px 3px;
+  font-family: "Quicksand", sans-serif;
+}
+
+.budget-balance-container {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+
+.budget-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100;
+  align-items: center;
+}
+.update-balance-button {
+  width: 100%;
+}
+
+.item-description-form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.bill-amount-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.items-table {
+  border-collapse: collapse;
+  border-spacing: 25%;
+  margin: 0;
+  table-layout: fixed;
+  column-width: 700px;
+  width: 100%;
+}
+
+.item-header {
+  border: 1px solid black;
+}
+
+.table-datum {
+  border: 1px solid black;
+}
+
+.inactive {
+  color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+
+input[type="text"]:disabled {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (min-width: 768px) {
+  .main {
+    position: relative;
+  }
+
+  .item-description-form-container {
+    position: absolute;
+    left: 200px;
+    top: 72px;
+  }
+}
